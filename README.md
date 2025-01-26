@@ -1,8 +1,12 @@
 # React + TypeScript + Vite
 
-screen ![alt text](image.png)
+Screenshot: 
 
-site reacrroutertest.netlify.app 
+ ![alt text](image.png)
+
+
+Site: [reacrroutertest.netlify.app ](reacrroutertest.netlify.app)
+
 
 To run on your own: 
 1. npm install
