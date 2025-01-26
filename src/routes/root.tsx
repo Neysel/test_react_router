@@ -33,7 +33,7 @@ export default function Root() {
       "q"
     );
 
-let doc = document.getElementById("q") as any
+// let doc = document.getElementById("q") as any
 
 useEffect(() => {
   setQuery(q);

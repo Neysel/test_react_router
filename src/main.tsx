@@ -10,14 +10,14 @@ import Contact, {
   loader as contactLoader,
   action as contactAction,
 } from "./routes/contact";
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
 import Index from "./routes/index";
-import App from './App.tsx'
+// import App from './App.tsx'
 
 
 const router = createBrowserRouter([
