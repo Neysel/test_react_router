@@ -73,9 +73,9 @@ useEffect(() => {
                 aria-live="polite"
               ></div>
             </Form>
-            <form method="post">
+            <Form method="post">
               <button type="submit">New</button>
-            </form>
+            </Form>
           </div>
           <nav>
           {contacts.length ? (
@@ -121,6 +121,7 @@ useEffect(() => {
         <Form method="post">
             <button type="submit">New</button>
           </Form>
+
       </div>
       </>
     );
