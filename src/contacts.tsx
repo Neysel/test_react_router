@@ -74,6 +74,7 @@ async function fakeNetwork(key?: any) {
 }
 
 // default contacts : 
+async function initializeContacts() {
  let contacts: any = await localforage.getItem("contacts");
 
   if (!contacts || contacts.length === 0) {
@@ -104,4 +105,6 @@ async function fakeNetwork(key?: any) {
     console.log("Initial contacts created");
   }
 
+}
 
+initializeContacts()
