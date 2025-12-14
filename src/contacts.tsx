@@ -72,3 +72,36 @@ async function fakeNetwork(key?: any) {
     setTimeout(res, Math.random() * 800);
   });
 }
+
+// default contacts : 
+ let contacts: any = await localforage.getItem("contacts");
+
+  if (!contacts || contacts.length === 0) {
+    const initialContacts = [
+      {
+        id: "1",
+        first: "John",
+        last: "Doe",
+        twitter: "@johndoe",
+        avatar: "https://robohash.org/john.png?size=200x200",
+        notes: "Senior Developer",
+        favorite: true,
+        createdAt: Date.now()
+      },
+      {
+        id: "2",
+        first: "Jane",
+        last: "Smith",
+        twitter: "@janesmith",
+        avatar: "https://robohash.org/jane.png?size=200x200",
+        notes: "Product Manager",
+        favorite: false,
+        createdAt: Date.now()
+      },
+    ];
+    
+    await localforage.setItem("contacts", initialContacts);
+    console.log("Initial contacts created");
+  }
+
+

@@ -120,7 +120,7 @@ useEffect(() => {
         <Outlet />
         <Form method="post">
             <button type="submit">New</button>
-          </Form>
+        </Form>
 
       </div>
       </>
