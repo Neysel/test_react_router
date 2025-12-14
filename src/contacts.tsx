@@ -1,6 +1,7 @@
 import localforage from "localforage";
 import { matchSorter } from "match-sorter";
 import sortBy from "sort-by";
+import defaultAvatarLucia from './assets/lucia_portrait_stuff.jpg';
 
 
 export async function getContacts(query?: any) {
@@ -81,17 +82,17 @@ async function initializeContacts() {
     const initialContacts = [
       {
         id: "1",
-        first: "John",
-        last: "Doe",
+        first: "Lucia",
+        last: "Plume",
         twitter: "@johndoe",
-        avatar: "https://robohash.org/john.png?size=200x200",
+        avatar: defaultAvatarLucia,
         notes: "Senior Developer",
         favorite: true,
         createdAt: Date.now()
       },
       {
         id: "2",
-        first: "Jane",
+        first: "Mary",
         last: "Smith",
         twitter: "@janesmith",
         avatar: "https://robohash.org/jane.png?size=200x200",

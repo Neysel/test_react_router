@@ -17,6 +17,7 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Index from "./routes/index";
+// import { action as pic } from "./routes/pic";
 // import App from './App.tsx'
 
 
@@ -54,6 +55,7 @@ const router = createBrowserRouter([
           action: destroyAction,
           // errorElement: <div>Oops! There was an error.</div>,
         },
+
       ],
     },
       
